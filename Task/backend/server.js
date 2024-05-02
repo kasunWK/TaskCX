@@ -14,35 +14,33 @@ const db=mysql.createConnection({
     database : "task"
 })
 
-const bcrypt = require('bcrypt');
+app.post('/signup',(req, res)=>{
+    const sql ="INSERT INTO signup(`name`,`email`,`password`) VALUES (?)"
+    const values =[
+        req.body.name,
+        req.body.email,
+        req.body.password
+    ]
+    db.query(sql,[values],(err, data)=>{
+        if(err){
+            return res.json("Error");
+        }
+        return res.json(data);
+    })
+})
 
-app.post('/signup', async (req, res) => {
-    const { name, email, password } = req.body;
-
-    // Validate inputs
-    if (!name || !email || !password) {
-        return res.status(400).json({ error: 'Name, email, and password are required' });
-    }
-
-    try {
-        // Hash the password
-        const hashedPassword = await bcrypt.hash(password, 10);
-
-        // Insert user into the database
-        const sql = "INSERT INTO signup (`name`, `email`, `password`) VALUES (?, ?, ?)";
-        db.query(sql, [name, email, hashedPassword], (err, data) => {
-            if (err) {
-                console.error('Error signing up:', err);
-                return res.status(500).json({ error: 'Failed to sign up' });
-            }
-            return res.status(201).json({ message: 'Signup successful' });
-        });
-    } catch (error) {
-        console.error('Error hashing password:', error);
-        return res.status(500).json({ error: 'Failed to sign up' });
-    }
-});
-
+app.post('/login',(req, res)=>{
+    const sql = "SELECT * FROM login WHERE username = ? AND password = ?";
+    
+    db.query(sql, [req.body.email, req.body.password], (err, data) => {
+        if(err) return res.json("Error");
+        if(data.length > 0) {
+            return res.json("Loging successful")
+        }else{
+            return res.json("No Recorded data")
+        }
+    })
+})
 
 app.listen(8081,()=>{
     console.log("Listning");

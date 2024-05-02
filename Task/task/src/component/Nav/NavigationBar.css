@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+  
+  .nav-options a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .login-button {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+    .nav-options {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-options a {
+      margin-bottom: 0.5rem;
+    }
+  }

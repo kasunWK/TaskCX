@@ -1,0 +1,53 @@
+.footer {
+  padding: 20px 0;
+  background-color: #28a745;
+  color: white;
+  text-align: left; /* Align all text to the left */
+}
+
+.footer h5,
+.footer h6 {
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.certified img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.school,
+.math {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+}
+
+.math ul {
+  margin: 0;
+  padding: 0;
+}
+
+.appStore, .playStore {
+  height: 50px;
+  width: 160px;
+}
+
+.CImage{
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  background-color: rgb(158, 159, 161);
+}
