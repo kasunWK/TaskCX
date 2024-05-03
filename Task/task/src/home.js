@@ -2,25 +2,39 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './component/Nav/NavigationBar';
 import Footer from './component/Footer/Footer';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import './home.css'
 
 const Home = () => {
   return (
     <div>
         <NavigationBar></NavigationBar>
     <div className="container-fluid bg-light p-5 text-center">
-      <h1 className="mb-4"><strong>Making Kids Fall in Love with Math!</strong></h1>
-      <p>BOOK YOUR FREE CLASS WITH AGE GROUP</p>
-      <div className="mb-3">
-        <button className="btn btn-outline-primary m-2">age -3</button>
-        <button className="btn btn-outline-primary m-2">age -4</button>
-        <button className="btn btn-outline-primary m-2">age -5</button>
-        <button className="btn btn-outline-primary m-2">age -7</button>
-        <button className="btn btn-outline-primary m-2">age -8</button>
-      </div>
-      <button className="btn btn-warning btn-lg mb-3"style={{ backgroundColor: '#FF5733' }}>BOOK A FREE LIVE CLASS</button>
-      <p className="text-success"><strong>For First Class 100% Off</strong></p>
-      <div className="illustration">
-      </div>
+    <Row>
+        {/* Left Column (Text Content) */}
+        <Col lg={6} md={12} className="d-flex align-items-center justify-content-center">
+          <div>
+            <h1 className="mb-4"><strong>Making Kids Fall in Love with Math!</strong></h1>
+            <p>BOOK YOUR FREE CLASS WITH AGE GROUP</p>
+            <div className="mb-3">
+              <Button variant="outline-primary" className="m-2">age -3</Button>
+              <Button variant="outline-primary" className="m-2">age -4</Button>
+              <Button variant="outline-primary" className="m-2">age -5</Button>
+              <Button variant="outline-primary" className="m-2">age -7</Button>
+              <Button variant="outline-primary" className="m-2">age -8</Button>
+            </div>
+            <Button variant="warning" size="lg" className="mb-3" style={{ backgroundColor: '#FF5733' }}>BOOK A FREE LIVE CLASS</Button>
+            <p className="text-success"><strong>For First Class 100% Off</strong></p>
+          </div>
+        </Col>
+
+        {/* Right Column (Image) */}
+        <Col lg={6} md={12} className="d-flex align-items-center justify-content-center">
+          <div className="illustration">
+            <img src='./img/super-kid.png' className="img-fluid" alt="Super Kid Illustration" />
+          </div>
+        </Col>
+      </Row>
     </div>
 
     <div className="container my-5">
@@ -28,8 +42,8 @@ const Home = () => {
       <p className="text-center text-secondary mb-5">The guaranteed formula to be a Math wizard</p>
       
       <div className="row">
-        <div className="col-md-4 mb-4" >
-          <div className="card h-100"style={{ backgroundColor: '#F0B1F2' }}>
+        <div className="col-md-3 sm-6 mb-4" >
+          <div className="card h-100"style={{ backgroundColor: '#FCE4EC' }}>
             <div className="card-body" >
               <h5 className="card-title text-primary">Professional Curriculum Helps Parents Rest Easy</h5>
               <ul className="card-text">
@@ -41,8 +55,8 @@ const Home = () => {
           </div>
         </div>
         
-        <div className="col-md-4 mb-4">
-          <div className="card h-100" style={{ backgroundColor: '#F1F2B1' }}>
+        <div className="col-md-3 sm-6 mb-4">
+          <div className="card h-100" style={{ backgroundColor: '#FFF0CB' }}>
             <div className="card-body">
               <h5 className="card-title text-warning">Personal Mentoring Service</h5>
               <ul className="card-text">
@@ -54,8 +68,8 @@ const Home = () => {
           </div>
         </div>
     
-        <div className="col-md-4 mb-4">
-          <div className="card h-100" style={{ backgroundColor: '#A0A08A' }}>
+        <div className="col-md-3 sm-6 mb-4">
+          <div className="card h-100" style={{ backgroundColor: '#EBF2FF' }}>
             <div className="card-body">
               <h5 className="card-title text-success">A Math Learning App Kids Crave</h5>
               <ul className="card-text">
@@ -65,6 +79,13 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className="col-md-3 sm-6 mb-4">
+            <div className="card-body">
+              <img src='./img/Group6.png' className='Group6' alt='student image'/>
+            </div>
+        </div>
+
       </div>
     </div>
 
@@ -72,30 +93,48 @@ const Home = () => {
       <h1 className="text-black">Cultivate Thinking Skills From All Aspects</h1>
       <p className="text-grey">Our Expert Advisors Can Help You Find The Right Workspace Solution For You And Your Team</p>
       <div className="btn-group my-3">
-        <button className="btn btn-orange">$2 <small>3-4 Years Old</small></button>
-        <button className="btn btn-orange">$3 <small>5 Years Old</small></button>
-        <button className="btn btn-orange">$4 <small>6 Years Old</small></button>
+        <button className="btn btn-orange">S2 <small>3-4 Years Old</small></button>
+        <button className="btn btn-orange">S3 <small>5 Years Old</small></button>
+        <button className="btn btn-orange">S4 <small>6 Years Old</small></button>
       </div>
       <div className="row justify-content-center align-items-center my-5">
         
       </div>
       <div className="row">
-        <div className="col-md-3">
-          <h3>Number Sense & Operations</h3>
-          <p>Fluently compose and decompose numbers within 10. Understand addition and subtraction within 10.</p>
+        <Col>
+          <img src='./img/our-class.png' className='ourclass' alt='our_class '/>
+        </Col>
+
+        <Col className='subject'>
+        <div className="col-md-12 d-flex align-items-center">
+          <img src='./img/image11.png' alt="Image" style={{ maxWidth: '200px', marginRight: '20px' }} />
+          <div>
+            <h3>Number Sense & Operations</h3>
+            <p>Fluently compose and decompose numbers within 10. Understand addition and subtraction within 10.</p>
+          </div>
         </div>
-        <div className="col-md-3">
-          <h3>Geometry</h3>
-          <p>Recognize 2D and 3D shapes Identify defining attributes of shapes (edges, vertices, sides, reflection, etc.)</p>
-        </div>
-        <div className="col-md-3">
-          <h3>Logic and Patterns</h3>
-          <p>Use analogical reasoning to solve Sudoku puzzles and understand the concept of cycles.</p>
-        </div>
-        <div className="col-md-3">
-          <h3>Problem Solving</h3>
-          <p>Learn tangram puzzles and practice creating shapes using tangram pieces.</p>
-        </div>
+          <div className="col-md-12 d-flex align-items-center">
+          <img src='./img/image12.png' style={{ maxWidth: '200px', marginRight: '20px' }}/>
+            <div>
+              <h3>Geometry</h3>
+              <p>Recognize 2D and 3D shapes Identify defining attributes of shapes (edges, vertices, sides, reflection, etc.)</p>
+            </div>
+          </div>
+          <div className="col-md-12 d-flex align-items-center">
+          <img src='./img/image13.png' style={{ maxWidth: '200px', marginRight: '20px' }} />
+            <div>
+              <h3>Logic and Patterns</h3>
+              <p>Use analogical reasoning to solve Sudoku puzzles and understand the concept of cycles.</p>
+            </div>
+          </div>
+          <div className="col-md-12 d-flex align-items-center">
+            <img  src='./img/image14.png' style={{ maxWidth: '200px', marginRight: '20px' }}/>
+            <div>
+              <h3>Problem Solving</h3>
+            <p>Learn tangram puzzles and practice creating shapes using tangram pieces.</p>
+            </div>
+          </div>
+        </Col>
       </div>
     </div>
     <Footer></Footer>

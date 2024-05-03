@@ -1,0 +1,42 @@
+.ourclass{
+    max-width: 100%;
+    width: 555px;
+    height: 470px;
+}
+
+.subject{
+    text-align: left;
+}
+
+.btn-group {
+    display: flex;
+  }
+  
+  .btn {
+    border: 2px solid orange;
+    background-color: transparent;
+    color: orange;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .btn:hover {
+    background-color: orange;
+    color: white; 
+  }
+  
+  .btn-orange {
+    border-color: orange;
+    color: orange;
+  }
+  
+  .btn-orange:hover {
+    background-color: orange;
+    color: white; 
+  }
+
+.Group6{
+    width: 270px;
+    height: 180px;
+    margin-top: 150px;
+}
+  
