@@ -34,7 +34,11 @@ const NavigationBar = () => {
       <div className="ml-auto">
       <img src='./img/contact.png' alt='contact-info' className='contact-icon' />
         <Link to="/" className="login-button">
-          <Button variant="success">Login</Button>
+          <Button variant="success">
+          <img src='./img/star.png' style={{marginRight:'5px'}}/>
+            Login
+            
+          </Button>
         </Link>
 
       </div>
