@@ -11,7 +11,6 @@ const Home = () => {
         <NavigationBar></NavigationBar>
     <div className="container-fluid bg-light p-5 text-center">
     <Row>
-        {/* Left Column (Text Content) */}
         <Col lg={6} md={12} className="d-flex align-items-center justify-content-center">
           <div>
             <h1 className="mb-4"><strong>Making Kids Fall in Love with Math!</strong></h1>
@@ -24,11 +23,11 @@ const Home = () => {
               <Button variant="outline-primary" className="m-2">age -8</Button>
             </div>
             <Button variant="warning" size="lg" className="mb-3" style={{ backgroundColor: '#FF5733' }}>BOOK A FREE LIVE CLASS</Button>
-            <p className="text-success"><strong>For First Class 100% Off</strong></p>
+            <p className="text-success">₹0 For First Class<strong>  100% Off</strong></p>
+            <p className="text-success" style={{color:'000000'}}>Booked a demo already?<strong style={{color:'#FF7C3B'}}> Join now</strong></p>
           </div>
         </Col>
 
-        {/* Right Column (Image) */}
         <Col lg={6} md={12} className="d-flex align-items-center justify-content-center">
           <div className="illustration">
             <img src='./img/super-kid.png' className="img-fluid" alt="Super Kid Illustration" />

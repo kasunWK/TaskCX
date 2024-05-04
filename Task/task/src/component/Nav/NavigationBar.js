@@ -8,25 +8,37 @@ const NavigationBar = () => {
   return (
     <Navbar bg="light" expand="lg" className="navbar">
       <Navbar.Brand>
-        <img src='./img/logo.png' alt='logo' className='logo'/>
+        <div>
+          <div><img src='./img/logo.png' alt='logo' className='logo'/></div>
+          <div><img src='./img/rocket.png' alt='image' className='rocket'/></div>
+        </div>
       </Navbar.Brand>
+
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link as={Link} to="/about-us">
-            <Button variant="primary" className='nav-button'>ABOUT</Button>
+            <Button variant="primary" className='nav-button'>ABOUT
+              <img src='./img/cokie.png' alt='cokie icon' className='cokie'/>
+            </Button>
           </Nav.Link>
           <Nav.Link as={Link} to="/math">
-            <Button variant="primary" className='nav-button'>MATH</Button>
+            <Button variant="primary" className='nav-button'>MATH
+              <img src='./img/cokie.png' alt='cokie icon' className='cokie'/>
+            </Button>
           </Nav.Link>
         </Nav>
-        <div>
-          <img src='./img/contact.png' alt='contact-info' className='contact-i'/>
-        </div>
+
       </Navbar.Collapse>
-      <Link to="/" className="login-button">
-        <Button variant="outline-primary">Login</Button>
-      </Link>
+
+      <div className="ml-auto">
+      <img src='./img/contact.png' alt='contact-info' className='contact-icon' />
+        <Link to="/" className="login-button">
+          <Button variant="success">Login</Button>
+        </Link>
+
+      </div>
+
     </Navbar>
   );
 };
