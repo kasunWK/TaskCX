@@ -20,6 +20,7 @@ const Home = () => {
               <Button variant="outline-primary" className="m-2">age -4</Button>
               <Button variant="outline-primary" className="m-2">age -5</Button>
               <Button variant="outline-primary" className="m-2">age -7</Button>
+              <Button variant="outline-primary" className="m-2">age -7</Button>
               <Button variant="outline-primary" className="m-2">age -8</Button>
             </div>
             <Button variant="warning" size="lg" className="mb-3" style={{ backgroundColor: '#FF5733' }}>BOOK A FREE LIVE CLASS</Button>
