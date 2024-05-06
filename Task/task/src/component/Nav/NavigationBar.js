@@ -37,7 +37,6 @@ const NavigationBar = () => {
           <Button variant="success">
           <img src='./img/star.png' style={{marginRight:'5px'}}/>
             Login
-            
           </Button>
         </Link>
 

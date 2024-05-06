@@ -51,9 +51,16 @@
   width: 100px;
 }
 
-.login-button{
+.login-button {
   background-color: #2CC84D;
   border-color: #2CC84D;
   margin-left: 25px;
   margin-right: 25px;
+  border-top: 5px solid #2CC84D;
+}
+
+.login-button:hover {
+  background-color: #2CC84D; /* Maintain the same background color on hover */
+  border-color: #2CC84D; /* Maintain the same border color on hover */
+  border-top: 5px solid #2CC84D; /* Maintain the same top border color and size on hover */
 }

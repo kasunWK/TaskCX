@@ -24,7 +24,7 @@ body {
   }
   
   .btn:hover {
-    background-color: orange;
+    background-color: rgb(0, 255, 81);
     color: white; 
   }
   
@@ -42,5 +42,35 @@ body {
     width: 270px;
     height: 180px;
     margin-top: 150px;
+}
+
+.m-2{
+  background-color: #ffffff;
+  border-color: #e4dfdf;
+  border-bottom: 5px solid #e4dfdf;
+  color: black;
+  font-weight: bold;
+}
+
+h1{
+  margin-left: 50px;
+  margin-right: 25px;
+  text-align: left;
+}
+
+.topic{
+  text-align: left;
+  margin-top: 65px;
+  margin-left: 50px;
+}
+
+.price{
+  color: black;
+  font-size: 3ch;
+  font-weight: normal;
+}
+
+.text-success{
+  color: black;
 }
   

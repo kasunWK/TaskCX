@@ -14,18 +14,20 @@ const Home = () => {
         <Col lg={6} md={12} className="d-flex align-items-center justify-content-center">
           <div>
             <h1 className="mb-4"><strong>Making Kids Fall in Love with Math!</strong></h1>
-            <p>BOOK YOUR FREE CLASS WITH AGE GROUP</p>
+            
             <div className="mb-3">
-              <Button variant="outline-primary" className="m-2">age -3</Button>
-              <Button variant="outline-primary" className="m-2">age -4</Button>
-              <Button variant="outline-primary" className="m-2">age -5</Button>
-              <Button variant="outline-primary" className="m-2">age -7</Button>
-              <Button variant="outline-primary" className="m-2">age -7</Button>
-              <Button variant="outline-primary" className="m-2">age -8</Button>
+            <p className='topic'><strong>BOOK YOUR FREE CLASS WITH AGE GROUP</strong></p>
+              <Button variant="outline-primary" className="m-2">age - 3</Button>
+              <Button variant="outline-primary" className="m-2">age - 4</Button>
+              <Button variant="outline-primary" className="m-2">age - 5</Button>
+              <Button variant="outline-primary" className="m-2">age - 7</Button>
+              <Button variant="outline-primary" className="m-2">age - 7</Button>
+              <Button variant="outline-primary" className="m-2">age - 8</Button>
             </div>
-            <Button variant="warning" size="lg" className="mb-3" style={{ backgroundColor: '#FF5733' }}>BOOK A FREE LIVE CLASS</Button>
-            <p className="text-success">₹0 For First Class<strong>  100% Off</strong></p>
-            <p className="text-success" style={{color:'000000'}}>Booked a demo already?<strong style={{color:'#FF7C3B'}}> Join now</strong></p>
+
+            <Button variant="warning" size="lg" className="mb-3" style={{ backgroundColor: '#ffffff' }}>BOOK A FREE LIVE CLASS</Button>
+            <p className="text-success"><strong className='price'>₹0</strong> For First Class<strong>  100% Off</strong></p>
+            <p className="text-success" style={{color:'#ffffff'}}>Booked a demo already?<strong style={{color:'#FF7C3B'}}> Join now</strong></p>
           </div>
         </Col>
 
@@ -39,7 +41,7 @@ const Home = () => {
 
     <div className="container my-5">
       <h1 className="text-center mb-4">Adaptive learning path + best teachers = Math mastery</h1>
-      <p className="text-center text-secondary mb-5">The guaranteed formula to be a Math wizard</p>
+      <p className="text-center text-secondary mb-5 text-black">The guaranteed formula to be a Math wizard</p>
       
       <div className="row">
         <div className="col-md-3 sm-6 mb-4" >
@@ -131,7 +133,7 @@ const Home = () => {
             <img  src='./img/image14.png' style={{ maxWidth: '200px', marginRight: '20px' }}/>
             <div>
               <h3>Problem Solving</h3>
-            <p>Learn tangram puzzles and practice creating shapes using tangram pieces.</p>
+              <p>Learn tangram puzzles and practice creating shapes using tangram pieces.</p>
             </div>
           </div>
         </Col>
