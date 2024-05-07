@@ -36,6 +36,7 @@ const Home = () => {
             <img src='./img/rightQ.png' className='upper-right-image'/>
             <img src='./img/leftQ.png' className='lower-left-image'/>
             <img src='./img/super-kid.png' className="img-fluid" alt="Super Kid Illustration" />
+
           </div>
         </Col>
       </Row>
@@ -49,8 +50,15 @@ const Home = () => {
         <div className="col-md-3 sm-6 mb-4" >
           <div className="card h-100"style={{ backgroundColor: '#FCE4EC' }}>
             <div className="card-body" >
-              <h5 className="card-title text-primary">Professional Curriculum Helps Parents Rest Easy</h5>
-              <ul className="card-text">
+            <div className="d-flex align-items-center">
+                <Col xs="auto">
+                  <img src="./img/image16.png" className="card-img" alt="Card Image" />
+                </Col>
+                <Col>
+                  <h5 className="card-title text-warning text-left mb-0">Professional Curriculum Helps Parents Rest Easy</h5>
+                </Col>
+              </div>
+              <ul className="card-text-1"> 
                 <li>Systematic curriculum for kids ages</li>
                 <li>Interactive AI content fosters and maintains kids' interest in learning</li>
                 <li>Immersive classes with interactive learning experiences</li>
@@ -62,8 +70,15 @@ const Home = () => {
         <div className="col-md-3 sm-6 mb-4">
           <div className="card h-100" style={{ backgroundColor: '#FFF0CB' }}>
             <div className="card-body">
-              <h5 className="card-title text-warning">Personal Mentoring Service</h5>
-              <ul className="card-text">
+              <div className="d-flex align-items-center">
+                <Col xs="auto">
+                  <img src="./img/image17.png" className="card-img" alt="Card Image" />
+                </Col>
+                <Col>
+                  <h5 className="card-title text-warning">Personal Mentoring Service</h5>
+                </Col>
+              </div>
+              <ul className="card-text-2">
                 <li>Your mentor provides 1-on-1 mentoring at any time</li>
                 <li>Daily reports keep you up to date on your child's learning</li>
                 <li>Instant feedback keeps kids encouraged and motivated</li>
@@ -75,8 +90,15 @@ const Home = () => {
         <div className="col-md-3 sm-6 mb-4">
           <div className="card h-100" style={{ backgroundColor: '#EBF2FF' }}>
             <div className="card-body">
-              <h5 className="card-title text-success">A Math Learning App Kids Crave</h5>
-              <ul className="card-text">
+            <div className="d-flex align-items-center">
+                <Col xs="auto">
+                  <img src="./img/image4.png" className="card-img" alt="Card Image" />
+                </Col>
+                <Col>
+                  <h5 className="card-title text-warning">A Math Learning App Kids Crave</h5>
+                </Col>
+              </div>
+              <ul className="card-text-3">
                 <li>Developed by early education specialists from Ivy League and other top universities</li>
                 <li>Progressive learning pathways thoughtfully developed for each child</li>
               </ul>

@@ -13,7 +13,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={3}>
-            <h5 style={{ marginTop: '25px' }}>Creta Class</h5>
+            <h5 style={{ marginTop: '25px', color:'white' }}>Creta Class</h5>
             <div>
               <Row><img src="./img/playStoreRB.png" className='playStore' alt="Play Store" /></Row>
               <Row><img src="./img/appStoreRB.png" className='appStore' alt="App Store" /></Row>
@@ -88,22 +88,21 @@ const Footer = () => {
             <h6 style={{ marginTop: '25px' }}>Contact Us</h6>
             <Row className="mb-3">
               <Col>
-                <FacebookOutlinedIcon />
-              </Col>
-              <Col>
-                <YouTubeIcon />
-              </Col>
-              <Col>
-                <InstagramIcon />
+                <FacebookOutlinedIcon className='icon'/>
+                <YouTubeIcon className='icon'/>
+                <InstagramIcon className='icon'/>
               </Col>
             </Row>
-            <Row>
-              <Col className='text-left'>
-                <CallIcon />
-                <p>Mon-Sat 12.30-20.30</p>
-                <p>+918069490068</p>
-              </Col>
-            </Row>
+
+            <Col className="text-left">
+    <div className="d-flex align-items-center"> {/* Use flexbox to align items */}
+      <CallIcon style={{ marginRight: '10px' }} /> {/* Add some right margin to the icon */}
+      <div>
+        <p style={{ marginBottom: '0' }}>Mon-Sat 12.30-20.30</p> {/* Ensure no bottom margin for the first paragraph */}
+        <p style={{ marginBottom: '0' }}>+918069490068</p> {/* Ensure no bottom margin for the second paragraph */}
+      </div>
+    </div>
+  </Col>
           </Col>
         </Row>
 
