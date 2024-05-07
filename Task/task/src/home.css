@@ -73,4 +73,27 @@ h1{
 .text-success{
   color: black;
 }
-  
+
+.img-fluid{
+  height: 500px;
+}
+
+.upper-right-image {
+  position: absolute;
+  top: 20px; 
+  right: 20px; 
+  width: 50px; 
+  height: auto;
+  padding-top: 100px;
+  margin-right: 100px;
+}
+
+.lower-left-image {
+  position: absolute;
+  /* top: 20px;  */
+  right: 20px; 
+  width: 50px; 
+  height: auto;
+  /* padding-bottom: 100px;
+  margin-left: 100px; */
+}

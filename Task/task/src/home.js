@@ -33,6 +33,8 @@ const Home = () => {
 
         <Col lg={6} md={12} className="d-flex align-items-center justify-content-center">
           <div className="illustration">
+            <img src='./img/rightQ.png' className='upper-right-image'/>
+            <img src='./img/leftQ.png' className='lower-left-image'/>
             <img src='./img/super-kid.png' className="img-fluid" alt="Super Kid Illustration" />
           </div>
         </Col>
